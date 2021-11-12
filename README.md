@@ -12,21 +12,29 @@
 
 ## Preprocessing
 
+```
 - cd ./preprocessing
 - python ./src/download-wiki-extract.py
 - bash ./src/wiki-preprocessing.sh
 - python ./local_processing.py
 - python ./entity_processing.py 
 - python ./tokenizer.py
+```
 
 ## Building a large semantic graph
 
+```
 - cd ./graph_building
 - python ./LSA.py
 - python ./building.py
 - cat word.graph doc.graph topic.graph > sememe.graph
+```
 
 ## Graph embedding
 
+* LINE: Large-scale information network embedding
+
+```
 - cd ./grapg_embedding
 - ./line -train sememe.graph -output ./sememe.embedding -binary 0 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads 20
+```
