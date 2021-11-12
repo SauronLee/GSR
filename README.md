@@ -1,14 +1,12 @@
 # Generate Sememe Representation via Building a Large Semantic Graph
-
-* python==3.6.5
-* mecab-python3==1.0.4
-* scikit-learn==1.0.1
-* scipy==1.7.1
-* nltk==3.6.5
-* gensim==4.1.2
-* biterm==0.1.5
-
-* cpp gsl==2.4.0
+- python==3.6.5
+- mecab-python3==1.0.4
+- scikit-learn==1.0.1
+- scipy==1.7.1
+- nltk==3.6.5
+- gensim==4.1.2
+- biterm==0.1.5
+- cpp gsl==2.4.0
 
 * The GSL package is used and can be downloaded at http://www.gnu.org/software/gsl/
 
