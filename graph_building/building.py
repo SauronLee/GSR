@@ -259,7 +259,7 @@ lsa_graph = open("topic.graph", 'w')
 for doc_i, doc_vec in enumerate(svd_matrix):
     for topic_i, weight in enumerate(doc_vec):
         if weight > 0.05:
-            lsa_graph.writelines("d-"+title_content_key_list[doc_i]+" "+"t-"+str(topic_i)+" "+str(weight))
+            lsa_graph.writelines("t-"+str(topic_i)+" "+"d-"+title_content_key_list[doc_i]+" "+str(weight))
             lsa_graph.write('\n')
             #print("doc"+str(doc_i)+" "+"topic"+str(topic_i)+" "+str(weight))
         else:
